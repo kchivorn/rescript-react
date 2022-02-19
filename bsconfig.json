@@ -1,0 +1,28 @@
+{
+    "name": "react-typescript-reason-training",
+    "reason": {
+        "react-jsx": 3
+    },
+    "sources": [
+        {
+            "dir": "src",
+            "subdirs": true
+        }
+    ],
+    "package-specs": [
+        {
+            "module": "es6-global",
+            "in-source": true
+        }
+    ],
+    "suffix": ".bs.js",
+    "namespace": true,
+    "bs-dependencies": [
+        "@rescript/react",
+        "rescript-material-ui",
+        "@mscharley/bs-material-ui-icons"
+    ],
+    "gentypeconfig": {
+        "language": "typescript"
+    }
+}
