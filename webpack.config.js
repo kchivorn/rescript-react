@@ -3,7 +3,7 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.bs.js',
     devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -52,7 +52,15 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/,
-                loader: 'url-loader?limit=10000&name=img/[name].[ext]'
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: 1000,
+                            name : 'assets/img/[name].[ext]'
+                        }
+                    }
+                ]
             }
         ]
     },
