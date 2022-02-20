@@ -8,6 +8,12 @@ let make = (~id, ~name, ~description, ~quantity, ~price, ~deleteFromCart, ~updat
             |Some(description) => `: ${description}` -> React.string
             |None => React.null
         }
+    let quantityHelper = value =>
+        if value === 0 {
+            ""->TextField.Value.string
+        } else {
+            value -> TextField.Value.int
+        }
 
     <TableRow key={name}>
         <TableCell scope="row">
@@ -20,7 +26,7 @@ let make = (~id, ~name, ~description, ~quantity, ~price, ~deleteFromCart, ~updat
             <TextField
                 \"type"="number"
                 id="standard-basic"
-                value={newProductTotal->TextField.Value.int}
+                value={newProductTotal->quantityHelper}
                 label={"New Quantity"->React.string}
                 onChange={(e: ReactEvent.Form.t) => 
                     setNewProductTotal((e->ReactEvent.Form.target)["value"])

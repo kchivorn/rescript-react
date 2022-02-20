@@ -25,6 +25,13 @@ function ProductRow(Props) {
       return null;
     }
   };
+  var quantityHelper = function (value) {
+    if (value === 0) {
+      return "";
+    } else {
+      return value;
+    }
+  };
   return React.createElement(Core.TableRow, {
               children: null,
               key: name
@@ -46,7 +53,7 @@ function ProductRow(Props) {
                             return Curry._1(setNewProductTotal, e.target.value);
                           }),
                         type: "number",
-                        value: newProductTotal
+                        value: quantityHelper(newProductTotal)
                       })
                 }), React.createElement(Core.TableCell, {
                   align: "right",
