@@ -7,8 +7,12 @@ My attempt is to update to newer version using rescript-react to convert this sh
 
 # How to run
 1. Open a terminal and run:
-```npm start
+```
+npm start
+```
 to run webpack in development mode
 2. Open another terminal to convert rescript to javascript
-```npm run re:watch
+```
+npm run re:watch
+```
 
