@@ -1,7 +1,14 @@
-# My Typescript ReScript React Tutorial
+# Attempt to learn ReScript React
 
-This repo is forked from Marcos Lombog's starter repo.
+This repo is following the tutorial https://github.com/alzateja/react-typescript-rescript-training
+In this tutorial it was using reason-react to convert a shopping cart app written in react.
 
-All credit to him for the bulk of the initial setup.
+My attempt is to update to newer version using rescript-react to convert this shopping cart app.
 
-https://github.com/mlomboglia/webpack-react-starter
+# How to run
+1. Open a terminal and run:
+```npm start
+to run webpack in development mode
+2. Open another terminal to convert rescript to javascript
+```npm run re:watch
+
