@@ -1,14 +1,14 @@
 {
-  "name": "react-typescript-reason-training",
+  "name": "react-typescript-rescript",
   "version": "1.0.0",
-  "description": "A template to learn typescript and adding Reason to a React app.",
+  "description": "A template to learn typescript and adding Rescript to a React app.",
   "repository": {
     "type": "git"
   },
   "keywords": [
     "React"
   ],
-  "author": "Jayson Alzate",
+  "author": "Chivorn Kouch",
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .jsx,.js src/ --fix",
